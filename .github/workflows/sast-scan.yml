@@ -32,6 +32,13 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: sast report
+          name: sast logs
           path: |
             ./ODC-report
+
+      - name: Archive report
+        uses: actions/upload-artifact@v4
+        with:
+          name: sast report
+          path: |
+            ./dependency-check-report.html
