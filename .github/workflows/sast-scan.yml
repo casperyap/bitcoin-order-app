@@ -30,7 +30,6 @@ jobs:
           dependency-check/bin/dependency-check.sh \
           --scan . \
           --format HTML \
-          --noupdate \
           --out ./ODC-report \
           --failOnCVSS 11 || true \
           --project "bitcoin" 
