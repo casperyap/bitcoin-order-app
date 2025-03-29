@@ -29,9 +29,7 @@ jobs:
         run: |
           dependency-check/bin/dependency-check.sh \
           --scan . \
-          --format HTML \
           --out ./ODC-report \
-          --failOnCVSS 11 || true \
           --project "bitcoin" 
 
       - name: Archive production artifacts
